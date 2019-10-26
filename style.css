@@ -1,0 +1,43 @@
+.wrapper {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    list-style-type: none;
+}
+
+.drawing-tools {
+    display: flexbox;
+    margin: auto 0;
+    width: 260px;
+    font-size: 0.9em;
+    
+}
+
+.tools {
+    display: block;
+    width: 228px;
+    height: 246px;
+    box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.27);
+    
+
+}
+
+.pallete {
+    width: 228px;
+    height: 246px;
+    border: 1px solid #d4d4d4;
+    box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.27);
+}
+
+.work-area{
+    display: flex;
+}
+
+
+@font-face {
+    font-family: "Roboto";  
+    src: url("./assets/fonts/roboto.ttf")  format("truetype");
+}
