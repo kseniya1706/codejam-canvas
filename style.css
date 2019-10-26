@@ -6,6 +6,7 @@
     font-size: 16px;
     line-height: 24px;
     list-style-type: none;
+    color: #333333
 }
 
 .drawing-tools {
@@ -17,12 +18,25 @@
 }
 
 .tools {
-    display: block;
     width: 228px;
     height: 246px;
+    border: 1px solid #d4d4d4;
     box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.27);
-    
+}
 
+.tools div {
+    display: flex;
+    height: 61px;
+    align-items: center;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.tools div img {
+    margin: 0 20px 0 20px;
+    
 }
 
 .pallete {
@@ -30,10 +44,71 @@
     height: 246px;
     border: 1px solid #d4d4d4;
     box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.27);
+    margin-top: 70px;
+    
+}
+
+.pallete div {
+    display: flex;
+    height: 61px;
+    align-items: center;
+}
+
+.pallete div div {
+    margin: 0 20px 0 20px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #303030;
+    
+}
+
+.current-color {
+    background-color: #a5a5a5;
+}
+
+.prev-color {
+    background-color: #55eba5;
+}
+
+.red-color {
+    background-color: #df4545;
+}
+
+.blue-color {
+    background-color:#5757be;
 }
 
 .work-area{
+    font-family: Roboto;
+    
+}
+
+.switch-buttons-container {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 512px;
+    height: 46px;
+    border: 1px solid #d4d4d4;
+    box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.27);
+    margin: 20px 0; 
+}
+
+.switch-button {
+    width: 160px;
+    height: 30px;
+    border: 1px solid #d4d4d4;
+    background-color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #333333
+
+}
+
+.switch-button:focus {
+    background-color: #a5a5a5;
+    border: 1px solid #707070;
 }
 
 
