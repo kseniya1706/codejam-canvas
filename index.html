@@ -10,64 +10,45 @@
     <title>Codejam-Canvas kseniya1706</title>
 </head>
 <body>
-    <!-- <div class="color-chek">
-    <input type="color" id="color">
-    </div> -->
     <div class="wrapper">
-        <aside class="drawing-tools">
+    <aside class="drawing-tools">
     <div class="tools">
-        <ul>
-            <li>
-                <img src="./assets/image/battle.svg" alt="">
-                    Paint bucket
-            </li>
-            <li>
-                <img src="./assets/image/pipette.svg" alt="">Choos color
-            </li>
-            <li>
-                <img src="./assets/image/move.svg" alt="">Move
-            </li>
-            <li>
-                <img src="./assets/image/transform.svg" alt="">Transform
-            </li>
-        </ul>
+        <div><img src="./assets/image/battle.svg" alt="">Paint bucket
+        </div>
+        <div class="bottom-border"><img src="./assets/image/pipette.svg" alt="">Choos color
+        </div>
+        <div><img src="./assets/image/move.svg" alt="">Move
+        </div>
+        <div><img src="./assets/image/transform.svg" alt="">Transform
+        </div>
     </div>
     <div class="pallete">
-        <ul>
-            <li>
-                <div></div>
-                    <p>Current color</p>
-                
-            </li>
-            <li>
-                <div></div>
-                    <p>Prev color</p>
-                
-            </li>
-            <li>
-                <div></div>
-                    <p>red</p>
-                
-            </li>
-            <li>
-                <div></div>
-                    <p>blue</p>
-                
-            </li>
-        </ul>
+        <div>
+            <div class="current-color"></div>Current color
+        </div>
+        <div  class="bottom-border">
+            <div class="prev-color"></div>Prev color
+        </div>
+        <div>
+            <div class="red-color"></div>red
+        </div>
+        <div>
+            <div  class="blue-color"></div>blue
+        </div>
     </div>
 </aside>
 <main class="work-area">
-    <div><h2>CANVAS AREA</h2>
-    <canvas id="canvas" height="512px" width="512px" style="border: 2px solid green;">
+        <div class="switch-buttons-container">
+                <button id="4x4" class="switch-button">4x4</button>
+                <button id="32x32"  class="switch-button">32x32</button>
+                <button id="256x256"  class="switch-button">256x256</button>
+            </div>
+    <div>
+    <canvas id="canvas" height="512px" width="512px" style="border: 2px solid #727272;">
             Извините, ваш браузер нет поддерживает &lt;canvas&gt; элемент.
     </canvas>
     </div>
-    <div class="switch-buttuns">
-        <button id="4x4">4x4</button>
-        <button id="32x32">32x32</button>
-        <button id="256x256">256x256</button>
-    </div>
+    
 </main>
 </div>
 </body>
