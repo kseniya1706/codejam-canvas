@@ -6260,6 +6260,19 @@ function domloaded(){
 
     }
 
+    function imgFile(){
+    
+      const canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+      var picture = new Image();
+      
+      picture.onload = function() {
+          ctx.drawImage(picture, 0, 0, 512, 512);
+      }
+      picture.src = './assets/image/image.png';
+     
+  }
+
     
     let count = 0;
     let size = 0;
@@ -6283,4 +6296,8 @@ function domloaded(){
         draw(frame, psize);
         count++;
     })
+
+    document.getElementById('256x256').addEventListener('click', () => {
+      imgFile();
+  })
 }
